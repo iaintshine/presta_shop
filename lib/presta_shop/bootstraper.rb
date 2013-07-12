@@ -1,3 +1,5 @@
+# More OO way - wrap in class
+
 module PrestaShop
 	def self.bootstrap!
 		configuration.validate!

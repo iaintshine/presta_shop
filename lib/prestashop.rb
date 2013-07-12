@@ -1,11 +1,16 @@
-require "core/string"
-require "core/hash" unless Hash.method_defined?(:except)
+require "core/string_ext"
+require "core/hash_ext" unless Hash.method_defined?(:except)
+
+require "rest_client"
+require "nokogiri"
 
 require "presta_shop/version"
 require "presta_shop/errors"
-require "presta_shop/configuration"
+require "presta_shop/resources"
 require "presta_shop/rest_methods"
 require "presta_shop/rest_permissions"
+require "presta_shop/configuration"
+require "presta_shop/headers"
 require "presta_shop/query_params"
 require "presta_shop/url_resolver"
 require "presta_shop/parser"

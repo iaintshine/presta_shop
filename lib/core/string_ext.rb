@@ -1,3 +1,5 @@
+require 'uri'
+
 String.class_eval do 
 	def valid_url?
 		uri = URI.parse self

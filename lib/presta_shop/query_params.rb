@@ -2,7 +2,7 @@ module PrestaShop
 	class QueryParams
 		attr_accessor :options
 
-		def initialize(options)
+		def initialize(options = nil)
 			@options = options
 		end
 

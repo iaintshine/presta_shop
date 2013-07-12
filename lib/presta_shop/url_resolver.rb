@@ -8,10 +8,8 @@ module PrestaShop
 			@configuration = configuration
 			@options = user_options
 
-			query_options = options.except :method,
-										   :payload,
-										   :resource,
-										   :id 
+			query_options = @options[:query]
+
 			unless configuration.default_shop?
 				query_options[:id_shop] = configuration.shop_id
 			end
@@ -26,7 +24,7 @@ module PrestaShop
 		def to_s
 			url = "#{configuration.api_url}"
 			if options[:resource]
-				url << options[:resource]
+				url << options[:resource].to_s
 				if options[:id]
 					url << "/#{options[:id]}"
 				end
@@ -41,7 +39,7 @@ module PrestaShop
 			end
 
 			if options[:query]
-				url << options[:query]
+				url << query_params.to_s
 			end
 
 			url

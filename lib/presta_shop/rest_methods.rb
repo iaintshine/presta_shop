@@ -8,22 +8,38 @@ module PrestaShop
 		alias_method :put?,    :put
 		alias_method :delete?, :delete
 
-		def initialize(attributes)
-			if attributes.nil? or attributes.empty?
-				@head = false
-				@get  = false
-				@post = false
-				@put  = false
-				@delete = false
-			else
-				rest_attributes.each do |name, attr|
-					self.send "#{name}=", attr.value
+		def initialize(attributes = nil)
+			@head = false
+			@get  = false
+			@post = false
+			@put  = false
+			@delete = false
+			
+			unless attributes.nil? or attributes.empty?
+				attributes.each do |name, attr|
+					self.send "#{name}=", attr
 				end
 			end
 		end
 
 		def supported?(method)
 			self.send method
+		end
+
+		def read_only?
+			(head? or get?) and !(post? or put? or delete?)
+		end
+
+		def write_only?
+			!(head? or get?) and (post? or put? or delete?)
+		end
+
+		def read_write?
+			(head? or get?) and (post? or put? or delete?)
+		end
+
+		def any?
+			head? or get? or post? or put? or delete?
 		end
 	end
 end

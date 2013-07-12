@@ -1,12 +1,23 @@
+require "presta_shop/resources"
+require "presta_shop/rest_methods"
+
+# keys are string !
 module PrestaShop
 	class RestPermissions
 		attr_accessor :resources
 
 		def initialize
-			@resources = {}
+			@resources = Hash.new
+
+			RESOURCES.each do |resource|
+				# no access by default
+				@resources[resource] = RestMethods.new
+			end
 		end
 
 		def []=(resource, methods)
+			raise ArgumentError, "#{resource} => invalid resource type" unless RESOURCES.include? resource
+			raise ArgumentError, "only PrestaShop::RestMethods arguments are valid" unless methods.kind_of?(PrestaShop::RestMethods)
 			resources[resource] = methods
 		end
 
@@ -14,21 +25,14 @@ module PrestaShop
 			resources[resource]
 		end
 
-		def any?
-			not resources.empty?
-		end
-
-		def empty?
-			resources.empty?
-		end
-
-		def respond_to?(method)
-			resources.has_key? method
+		def respond_to?(method_name)
+			resources.has_key? method_name
 		end
 
 		def method_missing(method_name, *args, &block)
-			if respond_to? method_name
-				resources[method_name]
+			method_string = method_name.to_s
+			if respond_to? method_string
+				resources[method_string]
 			else
 				super method_name, *args, &block
 			end
