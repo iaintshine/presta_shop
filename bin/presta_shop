@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/presta_shop',__FILE__)
+require File.expand_path('../../lib/presta_shop/cli',__FILE__)
+
+PrestaShop::Cli.start(ARGV)
