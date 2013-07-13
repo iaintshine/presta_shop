@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<shops>
+<shop id="1" xlink:href="http://presta/shop/api/shops/1"/>
+<shop id="2" xlink:href="http://presta/shop/api/shops/2"/>
+</shops>
+</prestashop>

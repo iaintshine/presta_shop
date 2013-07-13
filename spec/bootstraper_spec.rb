@@ -40,12 +40,34 @@ describe "PrestaShop bootstraper" do
 	end
 
 	context "root access" do
+		before(:all) do
+			PrestaShop.configure do |c|
+				c.api_url = "http://presta/shop"
+				c.api_key = "PRESTASH00PAPIKEY"
+			end
+
+			PrestaShop.query_permissions
+		end
+
 		it "has read write access on all resources" do
+			expect(PrestaShop.permissions.products.read_write?).to be_true
 		end
 	end
 
 	context "read only access to products" do
+		before(:all) do
+			PrestaShop.configure do |c|
+				c.api_url = "http://presta/shop"
+				c.api_key = "PRESTASH00PAPIKEYWEAK"
+			end
+
+			PrestaShop.query_permissions
+		end
+
 		it "has read only access on products" do
+			expect(PrestaShop.permissions.products.read_only?).to be_true
+			expect(PrestaShop.permissions.products.write_only?).to be_false
+			expect(PrestaShop.permissions.products.read_write?).to be_false
 		end
 	end
 end

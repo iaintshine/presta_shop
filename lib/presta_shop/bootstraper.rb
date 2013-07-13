@@ -30,15 +30,20 @@ module PrestaShop
 		return if xml_doc.root.children.empty?
 
 		# This one assumes only first shop is taken under consideration
-		first_shop = xml_doc.root.chidlren.first
+		first_shop = xml_doc.root.children.first
 
 		return if first_shop.children.empty?
 
 		first_shop.children.each do |n|
 			# this requires rails
-			attributes = n.attributes.except("href").map { |k, v| v.to_boolean }
-			 
-			permissions[n.name.to_sym] = RestMethods.new attributes
+			attributes = {}
+
+			n.attributes.except("href").each do |k, v| 
+				attributes[k] = v.value.to_boolean
+			end
+
+			# permissions need string as a resource
+			permissions[n.name.to_s] = RestMethods.new attributes
 		end
 	end
 end

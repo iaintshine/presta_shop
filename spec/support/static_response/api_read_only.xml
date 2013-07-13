@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<api shop_name="test">
+<products xlink:href="http://presta/shop/api/products" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/products" get="true" put="false" post="false" delete="false" head="true">
+The products</description>
+<schema xlink:href="http://presta/shop/api/products?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/products?schema=synopsis" type="synopsis"/>
+</products>
+<shops xlink:href="http://presta/shop/api/shops" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/shops" get="true" put="false" post="false" delete="false" head="true">
+Shops from multi-shop feature</description>
+<schema xlink:href="http://presta/shop/api/shops?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/shops?schema=synopsis" type="synopsis"/>
+</shops>
+</api>
+</prestashop>

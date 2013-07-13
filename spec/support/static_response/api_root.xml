@@ -1,0 +1,380 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<api shop_name="test">
+<addresses xlink:href="http://presta/shop/api/addresses" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/addresses" get="true" put="true" post="true" delete="true" head="true">
+The Customer, Manufacturer and Customer addresses</description>
+<schema xlink:href="http://presta/shop/api/addresses?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/addresses?schema=synopsis" type="synopsis"/>
+</addresses>
+<carriers xlink:href="http://presta/shop/api/carriers" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/carriers" get="true" put="true" post="true" delete="true" head="true">
+The Carriers</description>
+<schema xlink:href="http://presta/shop/api/carriers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/carriers?schema=synopsis" type="synopsis"/>
+</carriers>
+<cart_rules xlink:href="http://presta/shop/api/cart_rules" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/cart_rules" get="true" put="true" post="true" delete="true" head="true">
+Cart rules management</description>
+<schema xlink:href="http://presta/shop/api/cart_rules?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/cart_rules?schema=synopsis" type="synopsis"/>
+</cart_rules>
+<carts xlink:href="http://presta/shop/api/carts" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/carts" get="true" put="true" post="true" delete="true" head="true">
+Customer's carts</description>
+<schema xlink:href="http://presta/shop/api/carts?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/carts?schema=synopsis" type="synopsis"/>
+</carts>
+<categories xlink:href="http://presta/shop/api/categories" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/categories" get="true" put="true" post="true" delete="true" head="true">
+The product categories</description>
+<schema xlink:href="http://presta/shop/api/categories?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/categories?schema=synopsis" type="synopsis"/>
+</categories>
+<combinations xlink:href="http://presta/shop/api/combinations" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/combinations" get="true" put="true" post="true" delete="true" head="true">
+The product combinations</description>
+<schema xlink:href="http://presta/shop/api/combinations?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/combinations?schema=synopsis" type="synopsis"/>
+</combinations>
+<configurations xlink:href="http://presta/shop/api/configurations" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/configurations" get="true" put="true" post="true" delete="true" head="true">
+Shop configuration</description>
+<schema xlink:href="http://presta/shop/api/configurations?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/configurations?schema=synopsis" type="synopsis"/>
+</configurations>
+<contacts xlink:href="http://presta/shop/api/contacts" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/contacts" get="true" put="true" post="true" delete="true" head="true">
+Shop contacts</description>
+<schema xlink:href="http://presta/shop/api/contacts?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/contacts?schema=synopsis" type="synopsis"/>
+</contacts>
+<content_management_system xlink:href="http://presta/shop/api/content_management_system" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/content_management_system" get="true" put="true" post="true" delete="true" head="true">
+Content management system</description>
+<schema xlink:href="http://presta/shop/api/content_management_system?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/content_management_system?schema=synopsis" type="synopsis"/>
+</content_management_system>
+<countries xlink:href="http://presta/shop/api/countries" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/countries" get="true" put="true" post="true" delete="true" head="true">
+The countries</description>
+<schema xlink:href="http://presta/shop/api/countries?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/countries?schema=synopsis" type="synopsis"/>
+</countries>
+<currencies xlink:href="http://presta/shop/api/currencies" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/currencies" get="true" put="true" post="true" delete="true" head="true">
+The currencies</description>
+<schema xlink:href="http://presta/shop/api/currencies?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/currencies?schema=synopsis" type="synopsis"/>
+</currencies>
+<customer_messages xlink:href="http://presta/shop/api/customer_messages" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/customer_messages" get="true" put="true" post="true" delete="true" head="true">
+Customer services messages</description>
+<schema xlink:href="http://presta/shop/api/customer_messages?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/customer_messages?schema=synopsis" type="synopsis"/>
+</customer_messages>
+<customer_threads xlink:href="http://presta/shop/api/customer_threads" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/customer_threads" get="true" put="true" post="true" delete="true" head="true">
+Customer services threads</description>
+<schema xlink:href="http://presta/shop/api/customer_threads?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/customer_threads?schema=synopsis" type="synopsis"/>
+</customer_threads>
+<customers xlink:href="http://presta/shop/api/customers" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/customers" get="true" put="true" post="true" delete="true" head="true">
+The e-shop's customers</description>
+<schema xlink:href="http://presta/shop/api/customers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/customers?schema=synopsis" type="synopsis"/>
+</customers>
+<deliveries xlink:href="http://presta/shop/api/deliveries" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/deliveries" get="true" put="true" post="true" delete="true" head="true">
+Product delivery</description>
+<schema xlink:href="http://presta/shop/api/deliveries?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/deliveries?schema=synopsis" type="synopsis"/>
+</deliveries>
+<employees xlink:href="http://presta/shop/api/employees" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/employees" get="true" put="true" post="true" delete="true" head="true">
+The Employees</description>
+<schema xlink:href="http://presta/shop/api/employees?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/employees?schema=synopsis" type="synopsis"/>
+</employees>
+<groups xlink:href="http://presta/shop/api/groups" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/groups" get="true" put="true" post="true" delete="true" head="true">
+The customer's groups</description>
+<schema xlink:href="http://presta/shop/api/groups?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/groups?schema=synopsis" type="synopsis"/>
+</groups>
+<guests xlink:href="http://presta/shop/api/guests" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/guests" get="true" put="true" post="true" delete="true" head="true">
+The guests</description>
+<schema xlink:href="http://presta/shop/api/guests?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/guests?schema=synopsis" type="synopsis"/>
+</guests>
+<image_types xlink:href="http://presta/shop/api/image_types" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/image_types" get="true" put="true" post="true" delete="true" head="true">
+The image types</description>
+<schema xlink:href="http://presta/shop/api/image_types?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/image_types?schema=synopsis" type="synopsis"/>
+</image_types>
+<images xlink:href="http://presta/shop/api/images" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/images" get="true" put="true" post="true" delete="true" head="true">
+The images</description>
+</images>
+<languages xlink:href="http://presta/shop/api/languages" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/languages" get="true" put="true" post="true" delete="true" head="true">
+Shop languages</description>
+<schema xlink:href="http://presta/shop/api/languages?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/languages?schema=synopsis" type="synopsis"/>
+</languages>
+<manufacturers xlink:href="http://presta/shop/api/manufacturers" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/manufacturers" get="true" put="true" post="true" delete="true" head="true">
+The product manufacturers</description>
+<schema xlink:href="http://presta/shop/api/manufacturers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/manufacturers?schema=synopsis" type="synopsis"/>
+</manufacturers>
+<order_carriers xlink:href="http://presta/shop/api/order_carriers" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_carriers" get="true" put="true" post="true" delete="true" head="true">
+The Order carriers</description>
+<schema xlink:href="http://presta/shop/api/order_carriers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_carriers?schema=synopsis" type="synopsis"/>
+</order_carriers>
+<order_details xlink:href="http://presta/shop/api/order_details" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_details" get="true" put="true" post="true" delete="true" head="true">
+Details of an order</description>
+<schema xlink:href="http://presta/shop/api/order_details?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_details?schema=synopsis" type="synopsis"/>
+</order_details>
+<order_discounts xlink:href="http://presta/shop/api/order_discounts" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_discounts" get="true" put="true" post="true" delete="true" head="true">
+Discounts of an order</description>
+<schema xlink:href="http://presta/shop/api/order_discounts?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_discounts?schema=synopsis" type="synopsis"/>
+</order_discounts>
+<order_histories xlink:href="http://presta/shop/api/order_histories" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_histories" get="true" put="true" post="true" delete="true" head="true">
+The Order histories</description>
+<schema xlink:href="http://presta/shop/api/order_histories?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_histories?schema=synopsis" type="synopsis"/>
+</order_histories>
+<order_invoices xlink:href="http://presta/shop/api/order_invoices" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_invoices" get="true" put="true" post="true" delete="true" head="true">
+The Order invoices</description>
+<schema xlink:href="http://presta/shop/api/order_invoices?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_invoices?schema=synopsis" type="synopsis"/>
+</order_invoices>
+<order_payments xlink:href="http://presta/shop/api/order_payments" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_payments" get="true" put="true" post="true" delete="true" head="true">
+The Order payments</description>
+<schema xlink:href="http://presta/shop/api/order_payments?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_payments?schema=synopsis" type="synopsis"/>
+</order_payments>
+<order_states xlink:href="http://presta/shop/api/order_states" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/order_states" get="true" put="true" post="true" delete="true" head="true">
+The Order states</description>
+<schema xlink:href="http://presta/shop/api/order_states?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/order_states?schema=synopsis" type="synopsis"/>
+</order_states>
+<orders xlink:href="http://presta/shop/api/orders" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/orders" get="true" put="true" post="true" delete="true" head="true">
+The Customers orders</description>
+<schema xlink:href="http://presta/shop/api/orders?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/orders?schema=synopsis" type="synopsis"/>
+</orders>
+<price_ranges xlink:href="http://presta/shop/api/price_ranges" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/price_ranges" get="true" put="true" post="true" delete="true" head="true">
+Price ranges</description>
+<schema xlink:href="http://presta/shop/api/price_ranges?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/price_ranges?schema=synopsis" type="synopsis"/>
+</price_ranges>
+<product_feature_values xlink:href="http://presta/shop/api/product_feature_values" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/product_feature_values" get="true" put="true" post="true" delete="true" head="true">
+The product feature values</description>
+<schema xlink:href="http://presta/shop/api/product_feature_values?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/product_feature_values?schema=synopsis" type="synopsis"/>
+</product_feature_values>
+<product_features xlink:href="http://presta/shop/api/product_features" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/product_features" get="true" put="true" post="true" delete="true" head="true">
+The product features</description>
+<schema xlink:href="http://presta/shop/api/product_features?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/product_features?schema=synopsis" type="synopsis"/>
+</product_features>
+<product_option_values xlink:href="http://presta/shop/api/product_option_values" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/product_option_values" get="true" put="true" post="true" delete="true" head="true">
+The product options value</description>
+<schema xlink:href="http://presta/shop/api/product_option_values?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/product_option_values?schema=synopsis" type="synopsis"/>
+</product_option_values>
+<product_options xlink:href="http://presta/shop/api/product_options" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/product_options" get="true" put="true" post="true" delete="true" head="true">
+The product options</description>
+<schema xlink:href="http://presta/shop/api/product_options?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/product_options?schema=synopsis" type="synopsis"/>
+</product_options>
+<product_suppliers xlink:href="http://presta/shop/api/product_suppliers" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/product_suppliers" get="true" put="false" post="false" delete="false" head="true">
+Product Suppliers</description>
+<schema xlink:href="http://presta/shop/api/product_suppliers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/product_suppliers?schema=synopsis" type="synopsis"/>
+</product_suppliers>
+<products xlink:href="http://presta/shop/api/products" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/products" get="true" put="true" post="true" delete="true" head="true">
+The products</description>
+<schema xlink:href="http://presta/shop/api/products?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/products?schema=synopsis" type="synopsis"/>
+</products>
+<search xlink:href="http://presta/shop/api/search" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/search" get="true" put="false" post="false" delete="false" head="true">
+Search</description>
+</search>
+<shop_groups xlink:href="http://presta/shop/api/shop_groups" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/shop_groups" get="true" put="true" post="true" delete="true" head="true">
+Shop groups from multi-shop feature</description>
+<schema xlink:href="http://presta/shop/api/shop_groups?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/shop_groups?schema=synopsis" type="synopsis"/>
+</shop_groups>
+<shops xlink:href="http://presta/shop/api/shops" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/shops" get="true" put="true" post="true" delete="true" head="true">
+Shops from multi-shop feature</description>
+<schema xlink:href="http://presta/shop/api/shops?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/shops?schema=synopsis" type="synopsis"/>
+</shops>
+<specific_price_rules xlink:href="http://presta/shop/api/specific_price_rules" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/specific_price_rules" get="true" put="true" post="true" delete="true" head="true">
+Specific price management</description>
+<schema xlink:href="http://presta/shop/api/specific_price_rules?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/specific_price_rules?schema=synopsis" type="synopsis"/>
+</specific_price_rules>
+<specific_prices xlink:href="http://presta/shop/api/specific_prices" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/specific_prices" get="true" put="true" post="true" delete="true" head="true">
+Specific price management</description>
+<schema xlink:href="http://presta/shop/api/specific_prices?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/specific_prices?schema=synopsis" type="synopsis"/>
+</specific_prices>
+<states xlink:href="http://presta/shop/api/states" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/states" get="true" put="true" post="true" delete="true" head="true">
+The available states of countries</description>
+<schema xlink:href="http://presta/shop/api/states?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/states?schema=synopsis" type="synopsis"/>
+</states>
+<stock_availables xlink:href="http://presta/shop/api/stock_availables" get="true" put="true" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/stock_availables" get="true" put="true" post="false" delete="false" head="true">
+Available quantities</description>
+<schema xlink:href="http://presta/shop/api/stock_availables?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/stock_availables?schema=synopsis" type="synopsis"/>
+</stock_availables>
+<stock_movement_reasons xlink:href="http://presta/shop/api/stock_movement_reasons" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/stock_movement_reasons" get="true" put="true" post="true" delete="true" head="true">
+Stock movement reason</description>
+<schema xlink:href="http://presta/shop/api/stock_movement_reasons?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/stock_movement_reasons?schema=synopsis" type="synopsis"/>
+</stock_movement_reasons>
+<stock_movements xlink:href="http://presta/shop/api/stock_movements" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/stock_movements" get="true" put="false" post="false" delete="false" head="true">
+Stock movements</description>
+<schema xlink:href="http://presta/shop/api/stock_movements?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/stock_movements?schema=synopsis" type="synopsis"/>
+</stock_movements>
+<stocks xlink:href="http://presta/shop/api/stocks" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/stocks" get="true" put="false" post="false" delete="false" head="true">
+Stocks</description>
+<schema xlink:href="http://presta/shop/api/stocks?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/stocks?schema=synopsis" type="synopsis"/>
+</stocks>
+<stores xlink:href="http://presta/shop/api/stores" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/stores" get="true" put="true" post="true" delete="true" head="true">
+The stores</description>
+<schema xlink:href="http://presta/shop/api/stores?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/stores?schema=synopsis" type="synopsis"/>
+</stores>
+<suppliers xlink:href="http://presta/shop/api/suppliers" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/suppliers" get="true" put="true" post="true" delete="true" head="true">
+The product suppliers</description>
+<schema xlink:href="http://presta/shop/api/suppliers?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/suppliers?schema=synopsis" type="synopsis"/>
+</suppliers>
+<supply_order_details xlink:href="http://presta/shop/api/supply_order_details" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/supply_order_details" get="true" put="false" post="false" delete="false" head="true">
+Supply Order Details</description>
+<schema xlink:href="http://presta/shop/api/supply_order_details?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/supply_order_details?schema=synopsis" type="synopsis"/>
+</supply_order_details>
+<supply_order_histories xlink:href="http://presta/shop/api/supply_order_histories" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/supply_order_histories" get="true" put="false" post="false" delete="false" head="true">
+Supply Order Histories</description>
+<schema xlink:href="http://presta/shop/api/supply_order_histories?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/supply_order_histories?schema=synopsis" type="synopsis"/>
+</supply_order_histories>
+<supply_order_receipt_histories xlink:href="http://presta/shop/api/supply_order_receipt_histories" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/supply_order_receipt_histories" get="true" put="false" post="false" delete="false" head="true">
+Supply Order Receipt Histories</description>
+<schema xlink:href="http://presta/shop/api/supply_order_receipt_histories?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/supply_order_receipt_histories?schema=synopsis" type="synopsis"/>
+</supply_order_receipt_histories>
+<supply_order_states xlink:href="http://presta/shop/api/supply_order_states" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/supply_order_states" get="true" put="false" post="false" delete="false" head="true">
+Supply Order States</description>
+<schema xlink:href="http://presta/shop/api/supply_order_states?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/supply_order_states?schema=synopsis" type="synopsis"/>
+</supply_order_states>
+<supply_orders xlink:href="http://presta/shop/api/supply_orders" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/supply_orders" get="true" put="false" post="false" delete="false" head="true">
+Supply Orders</description>
+<schema xlink:href="http://presta/shop/api/supply_orders?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/supply_orders?schema=synopsis" type="synopsis"/>
+</supply_orders>
+<tags xlink:href="http://presta/shop/api/tags" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/tags" get="true" put="true" post="true" delete="true" head="true">
+The Products tags</description>
+<schema xlink:href="http://presta/shop/api/tags?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/tags?schema=synopsis" type="synopsis"/>
+</tags>
+<tax_rule_groups xlink:href="http://presta/shop/api/tax_rule_groups" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/tax_rule_groups" get="true" put="true" post="true" delete="true" head="true">
+Tax rule groups</description>
+<schema xlink:href="http://presta/shop/api/tax_rule_groups?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/tax_rule_groups?schema=synopsis" type="synopsis"/>
+</tax_rule_groups>
+<tax_rules xlink:href="http://presta/shop/api/tax_rules" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/tax_rules" get="true" put="true" post="true" delete="true" head="true">
+Tax rules entity</description>
+<schema xlink:href="http://presta/shop/api/tax_rules?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/tax_rules?schema=synopsis" type="synopsis"/>
+</tax_rules>
+<taxes xlink:href="http://presta/shop/api/taxes" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/taxes" get="true" put="true" post="true" delete="true" head="true">
+The tax rate</description>
+<schema xlink:href="http://presta/shop/api/taxes?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/taxes?schema=synopsis" type="synopsis"/>
+</taxes>
+<translated_configurations xlink:href="http://presta/shop/api/translated_configurations" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/translated_configurations" get="true" put="true" post="true" delete="true" head="true">
+Shop configuration</description>
+<schema xlink:href="http://presta/shop/api/translated_configurations?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/translated_configurations?schema=synopsis" type="synopsis"/>
+</translated_configurations>
+<warehouse_product_locations xlink:href="http://presta/shop/api/warehouse_product_locations" get="true" put="false" post="false" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/warehouse_product_locations" get="true" put="false" post="false" delete="false" head="true">
+Location of products in warehouses</description>
+<schema xlink:href="http://presta/shop/api/warehouse_product_locations?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/warehouse_product_locations?schema=synopsis" type="synopsis"/>
+</warehouse_product_locations>
+<warehouses xlink:href="http://presta/shop/api/warehouses" get="true" put="true" post="true" delete="false" head="true">
+<description xlink:href="http://presta/shop/api/warehouses" get="true" put="true" post="true" delete="false" head="true">
+Warehouses</description>
+<schema xlink:href="http://presta/shop/api/warehouses?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/warehouses?schema=synopsis" type="synopsis"/>
+</warehouses>
+<weight_ranges xlink:href="http://presta/shop/api/weight_ranges" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/weight_ranges" get="true" put="true" post="true" delete="true" head="true">
+Weight ranges</description>
+<schema xlink:href="http://presta/shop/api/weight_ranges?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/weight_ranges?schema=synopsis" type="synopsis"/>
+</weight_ranges>
+<zones xlink:href="http://presta/shop/api/zones" get="true" put="true" post="true" delete="true" head="true">
+<description xlink:href="http://presta/shop/api/zones" get="true" put="true" post="true" delete="true" head="true">
+The Countries zones</description>
+<schema xlink:href="http://presta/shop/api/zones?schema=blank" type="blank"/>
+<schema xlink:href="http://presta/shop/api/zones?schema=synopsis" type="synopsis"/>
+</zones>
+</api>
+</prestashop>
