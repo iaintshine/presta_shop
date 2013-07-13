@@ -1,5 +1,7 @@
 module PrestaShop
 	module Parser
+		# devil and evil ! change me ! i need oop !
+
 		module Helpers
 			def self.is_associations?(n)
 				n.name == 'associations'
@@ -72,7 +74,7 @@ module PrestaShop
 				n.children.each do |m|
 					hash = {}
 					m.attributes.each do |name, attr|
-						hash[name.to_sym] = Helper.prepare_data attr.value
+						hash[name.to_sym] = Helpers.prepare_data attr.value
 					end
 					resources << hash
 				end
@@ -86,12 +88,12 @@ module PrestaShop
 				hash = {}
 
 				n.children.each do |m|
-					if is_associations? m
+					if Helpers.is_associations? m
 						get_associations hash, m
-					elsif is_date? m
-						hash[m.name.to_sym] = Helper.to_datetime Helper.value m
+					elsif Helpers.is_date? m
+						hash[m.name.to_sym] = Helpers.to_datetime Helpers.value m
 					else
-						hash[m.name.to_sym] = Helper.value m
+						hash[m.name.to_sym] = Helpers.value m
 					end
 				end
 
