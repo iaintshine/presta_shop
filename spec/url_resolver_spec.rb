@@ -20,7 +20,19 @@ describe PrestaShop::URLResolver do
 		} }
 
 		it "returns true if valid request options" do
-			expect(PrestaShop::URLResolver.new(configuration, request_options)).to be_true
+			expect(PrestaShop::URLResolver.new(configuration, request_options).validate! ).to be_true
+		end
+
+		it "raises error when unknown resource" do
+			invalid_options = { :method => :get, :resource => :invalidresource }
+			expect{ PrestaShop::URLResolver.new(configuration, invalid_options).validate! }.to raise_error(PrestaShop::UnknownResource)
+		end
+
+		it "raises no error when resource known" do
+			PrestaShop::RESOURCES.each do |resource|
+				options = { :method => :get, :resource => resource }
+				expect{ PrestaShop::URLResolver.new(configuration, options).validate! }.not_to raise_error
+			end	
 		end
 	end
 
