@@ -7,13 +7,16 @@ module PrestaShop
 		
 		alias_method :debug?, :debug
 		
-		def initialize
-			@api_url = nil
-			@api_key = nil
-			@shop_id = nil
-			@debug   = false
-			@log     = 'stdout'
-			@headers = {}
+		def initialize(options = {})
+			@api_url = options[:api_url]
+			@api_key = options[:api_key]
+			@shop_id = options[:shop_id]
+			@debug   = options[:debug] || false
+			@log     = options[:logger] ||'stdout'
+			@headers = options[:headers] || {}
+
+			self.api_url = @api_url
+			self.headers = @headers
 		end
 
 		def api_url=(url)
@@ -25,8 +28,8 @@ module PrestaShop
 				@api_url << "/"
 			end
 
-			unless @api_url.end_with? "/api/"
-				@api_url << "/api/"
+			unless @api_url.end_with? "api/"
+				@api_url << "api/"
 			end
 		end
 
