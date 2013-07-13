@@ -20,6 +20,12 @@ module PrestaShop
 		end
 	end
 
+	class UnknownResource < WebServiceError
+		def initialize
+			super "Unknown PrestaShop web service resource."
+		end
+	end
+
 	class InvalidRequest < WebServiceError
 		def initialize
 			super "Invalid http request."
