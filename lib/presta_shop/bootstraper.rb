@@ -4,19 +4,23 @@ module PrestaShop
 	def self.bootstrap!
 		configuration.validate!
 
-		query_permisions
+		query_permissions
 	end
 
-	def self.query_permisions
+	def self.query_permissions
 		response = nil 
 		begin
-			response = RestClient.get configuration.api_url, :user => configuration.api_key,
-												  			 :headers => configuration.headers
-		rescue => e
+			response = RestClient::Request.new( :method => :get, 
+												:url => configuration.api_url,
+												:user => configuration.api_key,
+												:headers => configuration.headers).execute 
+		rescue RestClient::Unauthorized
+			raise Unauthorized
+		rescue 
 			raise InvalidRequest
 		end 
 
-		Headers.validate! response
+		Headers.new(response).validate!
 
 		xml_doc = Nokogiri::XML(response) do |config|
 			config.noblanks

@@ -31,4 +31,10 @@ module PrestaShop
 			super "Invalid http request."
 		end
 	end
+
+	class Unauthorized < WebServiceError
+		def initialize
+			super "Unauthorized"
+		end
+	end
 end

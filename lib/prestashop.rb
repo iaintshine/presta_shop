@@ -21,7 +21,7 @@ module PrestaShop
 	def self.configure
 		yield configuration
 
-		bootstrap!
+		#bootstrap!
 	end
 
 	def self.configuration

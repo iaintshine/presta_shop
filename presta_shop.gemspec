@@ -21,5 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency("thor", ">= 0.14.4")
 
   gem.add_development_dependency("rspec", ">= 2.13.0")
-  gem.add_development_dependency("fakeweb", "~> 1.3")
+  gem.add_development_dependency("fakeweb", ["~> 1.3"])
 end

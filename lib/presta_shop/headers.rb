@@ -8,7 +8,7 @@ module PrestaShop
   		attr_reader :version
 
   		def initialize(response)
-  			@version = Gem::Version.new(response.headers["PSWS-Version"]) if response and response.headers and response.headers["PSWS-Version"]
+  			@version = Gem::Version.new(response.headers[:psws_version]) if response and response.headers and response.headers[:psws_version]
   		end
 
   		def valid_version?

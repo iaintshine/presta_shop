@@ -6,7 +6,7 @@ class MockResponse
 
 	def initialize(version = nil)
 		@headers = Hash.new
-		@headers["PSWS-Version"] = version if version
+		@headers[:psws_version] = version if version
 	end
 end
 
