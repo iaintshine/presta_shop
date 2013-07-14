@@ -35,7 +35,7 @@ module PrestaShop
 	def self.get(options)
 		options[:method] = :get
 		response = execute options
-		parse response, options
+		Parser.parse response, options
 	end
 
 	def self.head(options)
@@ -45,36 +45,34 @@ module PrestaShop
 			true
 		rescue => e
 			return false unless e.http_code != 404
-			raise InvalidRequest
+			raise e
 		end
 	end
 
-	def self.add(options)
+	def self.create(options)
 		options[:method] = :post
 		response = execute options
-		parse response
+		Parser.parse response, options
 	end
 
-	def self.edit(options)
-		# should return true or false
+	def self.update(options)
 		options[:method] = :put
 		begin
 			execute options
 			true
 		rescue => e
 			return false unless e.http_code != 404
-			raise InvalidRequest
+			raise e
 		end
 	end
 
 	def self.delete(options)
-		# should return true or false
 		options[:method] = :delete
 		begin
 			execute options
 		rescue => e
 			return false unless e.http_code != 404
-			raise InvalidRequest
+			raise e
 		end
 	end
 end

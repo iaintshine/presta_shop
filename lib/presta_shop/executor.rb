@@ -8,16 +8,17 @@ module PrestaShop
 		response = nil
 		begin
 			response = RestClient::Request.execute  :method   => options[:method], 
-													:url 	  => url,
+													:url 	  => url.to_s,
 													:user 	  => configuration.api_key,
-													:password => nil,
 													:headers  => configuration.headers
-		rescue => e
-			raise IndalidRequest
+		rescue RestClient::Unauthorized
+			raise Unauthorized
+		rescue 
+			raise InvalidRequest
 		end
 
 		# Validate if PrestaShop version is supported
-		Headers.validate! response
+		Headers.new(response).validate!
 
 		response
 	end
