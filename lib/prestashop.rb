@@ -14,6 +14,7 @@ require "presta_shop/headers"
 require "presta_shop/query_params"
 require "presta_shop/url_resolver"
 require "presta_shop/parser"
+require "presta_shop/converter"
 require "presta_shop/executor"
 require "presta_shop/bootstraper"
 
@@ -51,6 +52,7 @@ module PrestaShop
 
 	def self.create(options)
 		options[:method] = :post
+		options[:payload] = Converter.convert(options[:resource], options[:payload]) if options[:payload]
 		response = execute options
 		Parser.parse response, options
 	end
@@ -58,6 +60,7 @@ module PrestaShop
 	def self.update(options)
 		options[:method] = :put
 		begin
+			options[:payload] = Converter.convert(options[:resource], options[:payload]) if options[:payload]
 			execute options
 			true
 		rescue => e
