@@ -40,6 +40,13 @@ describe "PrestaShop" do
 		end
 
 		describe "#head" do
+			it "raises no error" do
+				expect{ PrestaShop.head(:resource => :shops, :id => 1) }.not_to raise_error
+			end
+
+			it "returns true if resource exists" do
+				expect( PrestaShop.head(:resource => :shops, :id => 1)).to be_true
+			end
 		end
 
 		describe "#create" do

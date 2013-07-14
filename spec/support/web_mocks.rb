@@ -17,6 +17,11 @@ module PrestaShop
 				FakeWeb.register_uri(:get, "http://PRESTASH00PAPIKEYWEAK@presta/shop/api/", :body => static_responses["api_read_only.xml"], "PSWS-Version" => "1.5.0.0")
 				FakeWeb.register_uri(:get, "http://PRESTASH00PAPIKEY@presta/shop/api/shops", :body => static_responses["api_shops.xml"], "PSWS-Version" => "1.5.0.0")
 				FakeWeb.register_uri(:get, "http://PRESTASH00PAPIKEY@presta/shop/api/shops/1", :body => static_responses["api_shops_1.xml"], "PSWS-Version" => "1.5.0.0")
+
+				FakeWeb.register_uri(:head, "http://presta/shop/api/", :status => ["401", "Unauthorized"], "PSWS-Version" => "1.5.0.0")
+				FakeWeb.register_uri(:head, "http://PRESTASH00PAPIKEY@presta/shop/api/shops", :status => ["200", "OK"], "PSWS-Version" => "1.5.0.0")
+				FakeWeb.register_uri(:head, "http://PRESTASH00PAPIKEY@presta/shop/api/shops/1", :status => ["200", "OK"], "PSWS-Version" => "1.5.0.0")
+
 			end
 		end
 	end
