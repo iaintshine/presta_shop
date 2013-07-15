@@ -1,6 +1,8 @@
 # PrestaShop
 
-TODO: Write a gem description
+The Presta Shop API gem allows Ruby developers to programmatically interact with Presta Shop's Web Service API.
+
+The API is implemented as XML over HTTP using five verbs: HEAD/GET/POST/PUT/DELETE
 
 ## Installation
 
@@ -18,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Using your admin panel generate an authentication key. 
+2. Assign rights for each resource that you want to make available for this key.
+3. Initialize the library
+	
+	PrestaShop.configure do |c|
+		c.api_url = "http://your/presta/shop"
+		c.api_key = "YOURAPIKEY"
+	end
+
+	PrestaShop.bootstrap!
+
+4. Make a request
+
+	PrestaShop.get(:resource => :shops, :id => 1)
 
 ## Contributing
 

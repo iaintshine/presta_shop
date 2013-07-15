@@ -23,6 +23,9 @@ describe "PrestaShop" do
 	context "invalid resource name" do
 	end
 
+	context "key has no privilages" do
+	end
+
 	context "missing attributes" do
 	end
 
