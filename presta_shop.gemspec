@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["bodziomista@gmail.com"]
   gem.description   = %q{A library for Ruby to interact with the PrestaShop's Web Service API}
   gem.summary       = %q{A library for Ruby to interact with the PrestaShop's Web Service API}
-  gem.homepage      = "TODO: create a homepage"
+  gem.homepage      = "https://github.com/iaintshine/presta_shop"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
