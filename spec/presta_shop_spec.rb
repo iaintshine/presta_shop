@@ -14,6 +14,18 @@ describe "PrestaShop" do
 		PrestaShop.bootstrap!
 	end
 
+	context "invalid url" do
+	end
+
+	context "invalid credentials - api_key" do
+	end
+
+	context "invalid resource name" do
+	end
+
+	context "missing attributes" do
+	end
+
 	context "basic behaviour" do
 		describe "#get" do
 			it "raises no error if resource not found" do
