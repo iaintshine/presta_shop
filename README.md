@@ -24,17 +24,21 @@ Or install it yourself as:
 2. Assign rights for each resource that you want to make available for this key.
 3. Initialize the library
 	
+	```ruby
 	PrestaShop.configure do |c|
 		c.api_url = "http://your/presta/shop"
 		c.api_key = "YOURAPIKEY"
 	end
 
 	PrestaShop.bootstrap!
+	```
 
 4. Make a request
 
+	```ruby
 	PrestaShop.get(:resource => :shops, :id => 1)
-
+	```
+	
 ## Contributing
 
 1. Fork it
