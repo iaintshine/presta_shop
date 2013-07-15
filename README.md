@@ -33,12 +33,13 @@ Or install it yourself as:
 	PrestaShop.bootstrap!
 	```
 
-4. Make a request
+4. Make a request and use a reponse
 
 	```ruby
-	PrestaShop.get(:resource => :shops, :id => 1)
+	shop = PrestaShop.get(:resource => :shops, :id => 1)
+	puts shop[:name]
 	```
-	
+
 ## Contributing
 
 1. Fork it
