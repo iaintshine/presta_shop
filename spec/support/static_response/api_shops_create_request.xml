@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
+<shop>
+	<id_shop_group><![CDATA[1]]></id_shop_group>
+	<id_category><![CDATA[2]]></id_category>
+	<id_theme><![CDATA[2]]></id_theme>
+	<name><![CDATA[new test shop]]></name>
+</shop>
+</prestashop>

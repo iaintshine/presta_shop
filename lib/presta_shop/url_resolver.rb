@@ -18,7 +18,7 @@ module PrestaShop
 		end
 
 		def validate!
-			raise UnknownResource unless RESOURCES.include? options[:resource].to_s
+			raise UnknownResource, options[:resource] unless RESOURCES.include? options[:resource].to_s
 			
 			query_params.validate!
 		end

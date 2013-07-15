@@ -8,7 +8,7 @@ describe "PrestaShop bootstraper" do
 				c.api_key = "PRESTASH00PAPIKEY"
 			end
 
-			expect{ PrestaShop.query_permissions }.to raise_error(PrestaShop::InvalidRequest)
+			expect{ PrestaShop.query_permissions }.to raise_error(SocketError)
 		end
 
 		it "raises error when unsupported version" do
@@ -26,7 +26,7 @@ describe "PrestaShop bootstraper" do
 				c.api_key = "INVALIDAPIKEY"
 			end
 
-			expect{ PrestaShop.query_permissions }.to raise_error(PrestaShop::Unauthorized)
+			expect{ PrestaShop.query_permissions }.to raise_error(RestClient::Unauthorized)
 		end
 
 		it "raises no error on proper request" do

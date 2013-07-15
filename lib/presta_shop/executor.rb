@@ -5,18 +5,11 @@ module PrestaShop
 		url.validate!
 
 		# Make an request
-		response = nil
-		begin
-			response = RestClient::Request.execute  :method   => options[:method], 
-													:url 	  => url.to_s,
-													:user 	  => configuration.api_key,
-													:headers  => configuration.headers
-		rescue RestClient::Unauthorized
-			raise Unauthorized
-		rescue 
-			raise InvalidRequest
-		end
-
+		response = RestClient::Request.execute  :method   => options[:method], 
+												:url 	  => url.to_s,
+												:user 	  => configuration.api_key,
+												:headers  => configuration.headers
+		
 		# Validate if PrestaShop version is supported
 		Headers.new(response).validate!
 

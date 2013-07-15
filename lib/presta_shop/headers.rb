@@ -19,7 +19,7 @@ module PrestaShop
 
 		def validate!
 			raise ArgumentError unless version
-			raise UnsupportedVersion unless valid_version?
+			raise UnsupportedVersion, version unless valid_version?
 		end
 	end
 end

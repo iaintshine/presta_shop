@@ -35,8 +35,13 @@ module PrestaShop
 
 	def self.get(options)
 		options[:method] = :get
-		response = execute options
-		Parser.parse response, options
+		begin 
+			response = execute options
+			return Parser.parse response, options
+		rescue => e
+			return nil if e.kind_of?(RestClient::Exception) and e.http_code == 404
+			raise e
+		end
 	end
 
 	def self.head(options)
@@ -45,7 +50,7 @@ module PrestaShop
 			execute options
 			true
 		rescue => e
-			return false unless e.http_code != 404
+			return false if e.kind_of?(RestClient::Exception) and e.http_code == 404
 			raise e
 		end
 	end
@@ -54,7 +59,7 @@ module PrestaShop
 		options[:method] = :post
 		options[:payload] = Converter.convert(options[:resource], options[:payload]) if options[:payload]
 		response = execute options
-		Parser.parse response, options
+		Parser.parse response, :id => true
 	end
 
 	def self.update(options)
@@ -64,7 +69,7 @@ module PrestaShop
 			execute options
 			true
 		rescue => e
-			return false unless e.http_code != 404
+			return false if e.kind_of?(RestClient::Exception) and e.http_code == 404
 			raise e
 		end
 	end
@@ -74,7 +79,7 @@ module PrestaShop
 		begin
 			execute options
 		rescue => e
-			return false unless e.http_code != 404
+			return false if e.kind_of?(RestClient::Exception) and e.http_code == 404
 			raise e
 		end
 	end

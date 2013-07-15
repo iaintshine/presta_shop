@@ -15,26 +15,14 @@ module PrestaShop
 	end
 
 	class UnsupportedVersion < WebServiceError
-		def initialize
-			super "Unsupported PrestaShop web service version."
+		def initialize(version)
+			super "Unsupported PrestaShop web service version : #{version}."
 		end
 	end
 
 	class UnknownResource < WebServiceError
-		def initialize
-			super "Unknown PrestaShop web service resource."
-		end
-	end
-
-	class InvalidRequest < WebServiceError
-		def initialize
-			super "Invalid http request."
-		end
-	end
-
-	class Unauthorized < WebServiceError
-		def initialize
-			super "Unauthorized"
+		def initialize(resource)
+			super "Unknown PrestaShop web service resource : #{resource}."
 		end
 	end
 end

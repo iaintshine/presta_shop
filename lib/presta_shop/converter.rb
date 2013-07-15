@@ -2,7 +2,7 @@ module PrestaShop
 	module Converter
 		def self.convert(resource_type, resource_hash)
 			resource = resource_type.to_s
-			raise UnknownResource unless RESOURCES.include? resource
+			raise UnknownResource, resource unless RESOURCES.include? resource
 			
 			# TODO: user singularize from rails 
 			singular_resource = resource[0..-2]
