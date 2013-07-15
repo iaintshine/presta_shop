@@ -7,7 +7,7 @@ describe "PrestaShop::Converter" do
 			:id_category => 2,
 			:id_theme => 2,
 			:active => 1,
-			:deleted => 0,
+			:deleted => nil,
 			:name => "test"
 	} }
 
@@ -30,7 +30,7 @@ describe "PrestaShop::Converter" do
 		expect( shop_xml ).to include("<id_category><![CDATA[2]]></id_category>")
 		expect( shop_xml ).to include("<id_theme><![CDATA[2]]></id_theme>")
 		expect( shop_xml ).to include("<active><![CDATA[1]]></active>")
-		expect( shop_xml ).to include("<deleted><![CDATA[0]]></deleted>")
+		expect( shop_xml ).to include("<deleted></deleted>")
 		expect( shop_xml ).to include("<name><![CDATA[test]]></name>")
 		expect( shop_xml ).to include("</shop>")
 		expect( shop_xml ).to include("</prestashop>")

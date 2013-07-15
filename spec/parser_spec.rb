@@ -20,6 +20,27 @@ describe "PrestaShop::Parser" do
 		end
 	end
 
+	context "single resource without value" do
+		before(:all) do
+			@response_content = File.read(File.expand_path('../support/static_response/api_shops_create_response.xml', __FILE__))
+		end
+
+		it "raises no error" do
+			expect{ PrestaShop::Parser.parse(@response_content, {:id => true}) }.not_to raise_error
+		end
+
+		it "contains shop information" do
+			shop = PrestaShop::Parser.parse(@response_content, {:id => true})
+
+			expect(shop).to include(:id => 3)
+			expect(shop).to include(:id_category => 2)
+			expect(shop).to include(:id_theme => 2)
+			expect(shop).to include(:active => nil)
+			expect(shop).to include(:deleted => nil)
+			expect(shop).to include(:name => "new test shop")
+		end
+	end
+
 	context "array of resource ids" do
 		before(:all) do
 			@response_content = File.read(File.expand_path('../support/static_response/api_shops.xml', __FILE__))

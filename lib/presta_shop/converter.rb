@@ -12,7 +12,11 @@ module PrestaShop
 					xml.send(singular_resource) {
 						resource_hash.each do |key, value|
 							xml.send(key) {
-								xml.cdata value
+								if value
+									xml.cdata value
+								else
+									xml.text ""
+								end
 							}
 						end
 					}

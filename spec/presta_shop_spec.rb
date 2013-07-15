@@ -1,6 +1,11 @@
 require "spec_helper"
 
 describe "PrestaShop" do
+	pending "TOOD: Invalid requests not tested"
+
+	context "basic behaviour" do
+	end
+
 	context "valid requests" do
 		before(:all) do
 			PrestaShop.configure do |c|
@@ -49,13 +54,61 @@ describe "PrestaShop" do
 			end
 		end
 
-		describe "#create" do
-		end
+		# describe "#create" do
+		# 	let(:new_shop) { { 
+		# 		:id_shop_group => 1,
+		# 		:id_category => 2,
+		# 		:id_theme => 2,
+		# 		:name => "new shop"
+		# 	} }
 
-		describe "#update" do
-		end
+		# 	it "raises no error" do
+		# 		expect{ PrestaShop.create(:resource => :shops, :payload => new_shop) }.not_to raise_error
+		# 	end
 
-		describe "#delete" do
-		end
+		# 	it "returns new shop descriptor with valid id" do
+		# 		created_shop = PrestaShop.create(:resource => :shops, :payload => new_shop)
+
+		# 		expect(created_shop).to include(:id => 3)
+		# 		expect(created_shop).to include(:active => 1)
+		# 		expect(created_shop).to include(:deleted => 0)
+		# 		expect(created_shop).to include(new_shop)
+			
+		# 		# TODO: check error if already exists, and missing required attributes
+		# 		# returns 201 at success
+		# 		# return 201 and new shop id - you can create shop with the same name multiple times
+		# 		# when missing required attribute 400 bad request and error message in xml format
+		# 		# when more arguments than required even unknown - creates without error
+		# 	end
+		# end
+
+		# describe "#update" do
+		# 	# TODO: Check error if not exists, or attributes that not exists
+		# 	# TODO: Check if missing id of attribute
+		# 	# 404 when do not exists
+		# 	let(:shop) { {
+
+		# 	} }
+
+		# 	it "raises no error" do
+		# 		expect{ PrestaShop.update(:resource => :shops, :id => shop[:id], :payload => shop) }.not_to raise_error
+		# 	end
+
+		# 	it "return true on successfull update" do
+		# 	end
+		# end
+
+		# describe "#delete" do
+		# 	# TODO: Check error if already destroyed or on resources not on particular
+		# 	# 404 when do not exists
+
+		# 	it "raises no error" do
+		# 		expect{ PrestaShop.delete(:resource => :shops, :id => 4) }.not_to raise_error
+		# 	end
+
+		# 	it "returns true on success" do
+		# 		expect(PrestaShop.delete(:resource => :shops, :id => 4)).to be_true
+		# 	end
+		# end
 	end
 end
