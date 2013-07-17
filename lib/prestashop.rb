@@ -78,6 +78,7 @@ module PrestaShop
 		options[:method] = :delete
 		begin
 			execute options
+			true
 		rescue => e
 			return false if e.kind_of?(RestClient::Exception) and e.http_code == 404
 			raise e
