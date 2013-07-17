@@ -57,7 +57,7 @@ describe PrestaShop::URLResolver do
 				:payload => payload
 			}
 
-			expect(PrestaShop::URLResolver.new(configuration, options_with_payload).to_s).to eq("http://presta/shop/api/shops?xml='#{escaped_payload}'")
+			expect(PrestaShop::URLResolver.new(configuration, options_with_payload).to_s).to eq("http://presta/shop/api/shops?xml=#{escaped_payload}")
 		end
 
 		it "should return string when query params" do

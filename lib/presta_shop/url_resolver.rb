@@ -36,7 +36,7 @@ module PrestaShop
 			url << "?" if options[:query] or options[:payload]
 			
 			if options[:payload]
-				url << "xml='#{CGI.escape(options[:payload])}'"
+				url << "xml=#{CGI.escape(options[:payload])}"
 				url << "&" if options[:query]
 			end
 
