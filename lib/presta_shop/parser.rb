@@ -8,6 +8,7 @@ module PrestaShop
 			end
 
 			def self.is_date?(n)
+				return false
 				n.name.include? 'date' or n.name == 'birthday'
 			end
 
