@@ -28,6 +28,7 @@ module PrestaShop
 				FakeWeb.register_uri(:post, %r|http://PRESTASH00PAPIKEY@presta/shop/api/shops|, :body => static_responses["api_shops_create_response.xml"], "PSWS-Version" => "1.5.0.0")
 				
 				# Update resource
+				FakeWeb.register_uri(:get, %r|http://PRESTASH00PAPIKEY@presta/shop/api/shops/3|, :body => static_responses["api_shops_create_response.xml"], "PSWS-Version" => "1.5.0.0")
 				FakeWeb.register_uri(:put, %r|http://PRESTASH00PAPIKEY@presta/shop/api/shops/3|, :body => static_responses["api_shops_update_response.xml"], "PSWS-Version" => "1.5.0.0")
 				
 				# Delete resource

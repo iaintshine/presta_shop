@@ -85,3 +85,6 @@ module PrestaShop
 		end
 	end
 end
+
+require "presta_shop/model"
+require "presta_shop/models"
