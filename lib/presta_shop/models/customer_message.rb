@@ -1,7 +1,7 @@
 module PrestaShop
-	class CustomerMessage < Model
+    class CustomerMessage < Model
 
-		resource :customer_messages
+        resource :customer_messages
 
-	end
+    end
 end

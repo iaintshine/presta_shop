@@ -1,7 +1,7 @@
 module PrestaShop
-	class SpecificPriceRule < Model
+    class SpecificPriceRule < Model
 
-		resource :specific_price_rules
+        resource :specific_price_rules
 
-	end
+    end
 end

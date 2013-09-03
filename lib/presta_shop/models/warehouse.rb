@@ -1,7 +1,7 @@
 module PrestaShop
-	class Warehouse < Model
+    class Warehouse < Model
 
-		resource :warehouses
+        resource :warehouses
 
-	end
+    end
 end

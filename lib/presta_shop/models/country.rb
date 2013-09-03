@@ -1,7 +1,7 @@
 module PrestaShop
-	class Country < Model
+    class Country < Model
 
-		resource :countries
+        resource :countries
 
-	end
+    end
 end

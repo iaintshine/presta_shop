@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderInvoice < Model
+    class OrderInvoice < Model
 
-		resource :order_invoices
+        resource :order_invoices
 
-	end
+    end
 end

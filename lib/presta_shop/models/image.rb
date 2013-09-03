@@ -1,7 +1,7 @@
 module PrestaShop
-	class Image < Model
+    class Image < Model
 
-		resource :images
+        resource :images
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class Guest < Model
+    class Guest < Model
 
-		resource :guests
+        resource :guests
 
-	end
+    end
 end

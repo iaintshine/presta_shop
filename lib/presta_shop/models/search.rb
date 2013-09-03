@@ -1,7 +1,7 @@
 module PrestaShop
-	class Search < Model
+    class Search < Model
 
-		resource :search
+        resource :search
 
-	end
+    end
 end

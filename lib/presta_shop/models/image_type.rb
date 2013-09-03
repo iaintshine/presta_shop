@@ -1,7 +1,7 @@
 module PrestaShop
-	class ImageType < Model
+    class ImageType < Model
 
-		resource :image_types
+        resource :image_types
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class ShopGroup < Model
+    class ShopGroup < Model
 
-		resource :shop_groups
+        resource :shop_groups
 
-	end
+    end
 end

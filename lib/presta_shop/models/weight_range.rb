@@ -1,7 +1,7 @@
 module PrestaShop
-	class WeightRange < Model
+    class WeightRange < Model
 
-		resource :weight_ranges
+        resource :weight_ranges
 
-	end
+    end
 end

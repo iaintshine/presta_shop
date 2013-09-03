@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderCarrier < Model
+    class OrderCarrier < Model
 
-		resource :order_carriers
+        resource :order_carriers
 
-	end
+    end
 end

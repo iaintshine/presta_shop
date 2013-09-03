@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderDetail < Model
+    class OrderDetail < Model
 
-		resource :order_details
+        resource :order_details
 
-	end
+    end
 end

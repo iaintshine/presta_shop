@@ -1,7 +1,7 @@
 module PrestaShop
-	class Taxis < Model
+    class Taxis < Model
 
-		resource :taxes
+        resource :taxes
 
-	end
+    end
 end

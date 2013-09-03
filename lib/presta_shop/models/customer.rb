@@ -1,7 +1,7 @@
 module PrestaShop
-	class Customer < Model
+    class Customer < Model
 
-		resource :customers
+        resource :customers
 
-	end
+    end
 end

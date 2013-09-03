@@ -1,7 +1,7 @@
 module PrestaShop
-	class SupplyOrderState < Model
+    class SupplyOrderState < Model
 
-		resource :supply_order_states
+        resource :supply_order_states
 
-	end
+    end
 end

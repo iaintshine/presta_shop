@@ -1,7 +1,7 @@
 module PrestaShop
-	class Category < Model
+    class Category < Model
 
-		resource :categories
+        resource :categories
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class CustomerThread < Model
+    class CustomerThread < Model
 
-		resource :customer_threads
+        resource :customer_threads
 
-	end
+    end
 end

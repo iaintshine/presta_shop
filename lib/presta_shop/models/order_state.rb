@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderState < Model
+    class OrderState < Model
 
-		resource :order_states
+        resource :order_states
 
-	end
+    end
 end

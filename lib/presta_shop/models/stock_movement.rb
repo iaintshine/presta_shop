@@ -1,7 +1,7 @@
 module PrestaShop
-	class StockMovement < Model
+    class StockMovement < Model
 
-		resource :stock_movements
+        resource :stock_movements
 
-	end
+    end
 end

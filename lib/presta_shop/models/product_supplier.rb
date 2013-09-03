@@ -1,7 +1,7 @@
 module PrestaShop
-	class ProductSupplier < Model
+    class ProductSupplier < Model
 
-		resource :product_suppliers
+        resource :product_suppliers
 
-	end
+    end
 end

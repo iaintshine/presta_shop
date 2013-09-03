@@ -1,7 +1,7 @@
 module PrestaShop
-	class TranslatedConfiguration < Model
+    class TranslatedConfiguration < Model
 
-		resource :translated_configurations
+        resource :translated_configurations
 
-	end
+    end
 end

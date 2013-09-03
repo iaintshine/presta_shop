@@ -1,7 +1,7 @@
 module PrestaShop
-	class StockAvailable < Model
+    class StockAvailable < Model
 
-		resource :stock_availables
+        resource :stock_availables
 
-	end
+    end
 end

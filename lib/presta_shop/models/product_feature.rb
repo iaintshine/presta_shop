@@ -1,7 +1,7 @@
 module PrestaShop
-	class ProductFeature < Model
+    class ProductFeature < Model
 
-		resource :product_features
+        resource :product_features
 
-	end
+    end
 end

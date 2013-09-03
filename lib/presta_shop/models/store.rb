@@ -1,7 +1,7 @@
 module PrestaShop
-	class Store < Model
+    class Store < Model
 
-		resource :stores
+        resource :stores
 
-	end
+    end
 end

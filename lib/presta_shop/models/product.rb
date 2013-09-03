@@ -1,7 +1,7 @@
 module PrestaShop
-	class Product < Model
+    class Product < Model
 
-		resource :products
+        resource :products
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class SupplyOrderHistory < Model
+    class SupplyOrderHistory < Model
 
-		resource :supply_order_histories
+        resource :supply_order_histories
 
-	end
+    end
 end

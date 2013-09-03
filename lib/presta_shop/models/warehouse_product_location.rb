@@ -1,7 +1,7 @@
 module PrestaShop
-	class WarehouseProductLocation < Model
+    class WarehouseProductLocation < Model
 
-		resource :warehouse_product_locations
+        resource :warehouse_product_locations
 
-	end
+    end
 end

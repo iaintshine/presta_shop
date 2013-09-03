@@ -1,7 +1,7 @@
 module PrestaShop
-	class Contact < Model
+    class Contact < Model
 
-		resource :contacts
+        resource :contacts
 
-	end
+    end
 end

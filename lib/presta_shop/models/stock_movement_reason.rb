@@ -1,7 +1,7 @@
 module PrestaShop
-	class StockMovementReason < Model
+    class StockMovementReason < Model
 
-		resource :stock_movement_reasons
+        resource :stock_movement_reasons
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class ContentManagementSystem < Model
+    class ContentManagementSystem < Model
 
-		resource :content_management_system
+        resource :content_management_system
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class Stock < Model
+    class Stock < Model
 
-		resource :stocks
+        resource :stocks
 
-	end
+    end
 end

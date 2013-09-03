@@ -1,7 +1,7 @@
 module PrestaShop
-	class Combination < Model
+    class Combination < Model
 
-		resource :combinations
+        resource :combinations
 
-	end
+    end
 end

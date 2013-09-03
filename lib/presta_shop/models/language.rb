@@ -1,7 +1,7 @@
 module PrestaShop
-	class Language < Model
+    class Language < Model
 
-		resource :languages
+        resource :languages
 
-	end
+    end
 end

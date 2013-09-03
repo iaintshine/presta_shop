@@ -1,7 +1,7 @@
 module PrestaShop
-	class State < Model
+    class State < Model
 
-		resource :states
+        resource :states
 
-	end
+    end
 end

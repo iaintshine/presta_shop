@@ -1,7 +1,7 @@
 module PrestaShop
-	class Delivery < Model
+    class Delivery < Model
 
-		resource :deliveries
+        resource :deliveries
 
-	end
+    end
 end

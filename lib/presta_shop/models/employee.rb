@@ -1,7 +1,7 @@
 module PrestaShop
-	class Employee < Model
+    class Employee < Model
 
-		resource :employees
+        resource :employees
 
-	end
+    end
 end

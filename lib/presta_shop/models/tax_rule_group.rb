@@ -1,7 +1,7 @@
 module PrestaShop
-	class TaxRuleGroup < Model
+    class TaxRuleGroup < Model
 
-		resource :tax_rule_groups
+        resource :tax_rule_groups
 
-	end
+    end
 end

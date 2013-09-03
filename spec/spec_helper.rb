@@ -12,10 +12,10 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.before :each do 
-  	# TODO:
+      # TODO:
   end
 
   config.after :each do
-  	# TODO:
+      # TODO:
   end
 end

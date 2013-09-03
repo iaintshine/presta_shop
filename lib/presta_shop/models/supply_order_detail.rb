@@ -1,7 +1,7 @@
 module PrestaShop
-	class SupplyOrderDetail < Model
+    class SupplyOrderDetail < Model
 
-		resource :supply_order_details
+        resource :supply_order_details
 
-	end
+    end
 end

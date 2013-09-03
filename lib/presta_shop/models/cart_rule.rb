@@ -1,7 +1,7 @@
 module PrestaShop
-	class CartRule < Model
+    class CartRule < Model
 
-		resource :cart_rules
+        resource :cart_rules
 
-	end
+    end
 end

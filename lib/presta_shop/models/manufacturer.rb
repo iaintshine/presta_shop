@@ -1,7 +1,7 @@
 module PrestaShop
-	class Manufacturer < Model
+    class Manufacturer < Model
 
-		resource :manufacturers
+        resource :manufacturers
 
-	end
+    end
 end

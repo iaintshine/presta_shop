@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderHistory < Model
+    class OrderHistory < Model
 
-		resource :order_histories
+        resource :order_histories
 
-	end
+    end
 end

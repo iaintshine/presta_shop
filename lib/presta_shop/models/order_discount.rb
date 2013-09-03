@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderDiscount < Model
+    class OrderDiscount < Model
 
-		resource :order_discounts
+        resource :order_discounts
 
-	end
+    end
 end

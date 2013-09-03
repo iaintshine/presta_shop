@@ -1,7 +1,7 @@
 module PrestaShop
-	class PriceRange < Model
+    class PriceRange < Model
 
-		resource :price_ranges
+        resource :price_ranges
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class OrderPayment < Model
+    class OrderPayment < Model
 
-		resource :order_payments
+        resource :order_payments
 
-	end
+    end
 end

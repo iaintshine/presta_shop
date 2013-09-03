@@ -1,7 +1,7 @@
 module PrestaShop
-	class Cart < Model
+    class Cart < Model
 
-		resource :carts
+        resource :carts
 
-	end
+    end
 end

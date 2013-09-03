@@ -1,7 +1,7 @@
 module PrestaShop
-	class Zone < Model
+    class Zone < Model
 
-		resource :zones
+        resource :zones
 
-	end
+    end
 end

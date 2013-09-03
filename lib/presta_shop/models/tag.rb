@@ -1,7 +1,7 @@
 module PrestaShop
-	class Tag < Model
+    class Tag < Model
 
-		resource :tags
+        resource :tags
 
-	end
+    end
 end

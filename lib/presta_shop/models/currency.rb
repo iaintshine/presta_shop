@@ -1,7 +1,7 @@
 module PrestaShop
-	class Currency < Model
+    class Currency < Model
 
-		resource :currencies
+        resource :currencies
 
-	end
+    end
 end

@@ -1,7 +1,7 @@
 module PrestaShop
-	class Address < Model
+    class Address < Model
 
-		resource :addresses
+        resource :addresses
 
-	end
+    end
 end

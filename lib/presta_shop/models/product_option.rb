@@ -1,7 +1,7 @@
 module PrestaShop
-	class ProductOption < Model
+    class ProductOption < Model
 
-		resource :product_options
+        resource :product_options
 
-	end
+    end
 end
