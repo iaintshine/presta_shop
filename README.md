@@ -42,7 +42,7 @@ Or install it yourself as:
 
     You can use a new high-level ActiveRecord-like ORM style as well 
 
-    ```
+    ```ruby
     shop = PrestaShop::Shop.find(1)
     puts shop.name
     ```  
@@ -93,7 +93,7 @@ Or install it yourself as:
     PrestaShop.get resource: :shops, id: id
     
     # Fetch a collection of resources
-    PrestaShop::Shop resource: :shops
+    PrestaShop::get resource: :shops
     
     # Create a new resource
     shop = { name: "new shop", id_category: 2 ... }
@@ -106,7 +106,10 @@ Or install it yourself as:
     # Destroy a resource using an id
     PrestaShop.delete resource: :shops, id: id
     ```
+### Supported resources
 
+    For a list of supported resources, see file `presta_shop/resources.rb` or `presta_shop/models/` subdirectory.
+    
 ## Contributing
 
 1. Fork it
