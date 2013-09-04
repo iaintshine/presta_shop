@@ -106,9 +106,10 @@ Or install it yourself as:
     # Destroy a resource using an id
     PrestaShop.delete resource: :shops, id: id
     ```
+
 ## Supported resources
 
-    For a list of supported resources, see file `presta_shop/resources.rb` or `presta_shop/models/` subdirectory.
+For a list of supported resources, see file `presta_shop/resources.rb` or `presta_shop/models/` subdirectory.
 
 ## Contributing
 
