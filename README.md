@@ -8,7 +8,7 @@ The API is implemented as XML over HTTP using five verbs: HEAD/GET/POST/PUT/DELE
 
 Add this line to your application's Gemfile:
 
-    gem 'presta_shop'
+    gem 'presta_shop', :git => 'https://github.com/iaintshine/presta_shop.git'
 
 And then execute:
 
