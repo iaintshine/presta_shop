@@ -107,7 +107,7 @@ module PrestaShop
                 association_symbol = association.name.to_sym
                 hash[association_symbol] = []
                 association.children.each do |n|
-                    item =  xml_node_to_hash n
+                    item =  Hash.xml_node_to_hash n
                     hash[association_symbol] << item
                 end
             end

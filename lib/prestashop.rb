@@ -1,5 +1,5 @@
 require "core/string_ext"
-require "core/hash_ext" unless Hash.method_defined?(:except)
+require "core/hash_ext"
 
 require "rest_client"
 require "nokogiri"
