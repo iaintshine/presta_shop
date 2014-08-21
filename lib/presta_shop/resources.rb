@@ -32,6 +32,7 @@ module PrestaShop
                     manufacturers
                     order_carriers
                     order_details
+                    order_slip
                     order_discounts
                     order_histories
                     order_invoices
@@ -70,6 +71,6 @@ module PrestaShop
                     warehouse_product_locations
                     warehouses
                     weight_ranges
-                    zones 
+                    zones
     }
 end

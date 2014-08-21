@@ -3,7 +3,7 @@ require "rubygems/version"
 module PrestaShop
     class Headers
         MIN_COMPATIBLE_VERSION = Gem::Version.new("1.5.0.0")
-          MAX_COMPATIBLE_VERSION = Gem::Version.new("1.5.6.0")
+          MAX_COMPATIBLE_VERSION = Gem::Version.new("1.6.0.8")
 
           attr_reader :version
 
