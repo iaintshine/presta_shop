@@ -14,7 +14,7 @@ module PrestaShop
                                             :url => configuration.api_url,
                                             :user => configuration.api_key,
                                             :headers => configuration.headers).execute 
-
+        response.proxy = ENV['https_proxy']
         Headers.new(response).validate!
 
         xml_doc = Nokogiri::XML(response) do |config|
